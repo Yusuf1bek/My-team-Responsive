@@ -1,0 +1,108 @@
+/*hero style start*/
+
+.hero-section {
+    background-image: url("../images/hero-section-bg.svg");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: calc(50% - 691px) 0;
+
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 250px;
+    background-image: url("../images/hero-bg.svg");
+    background-repeat: no-repeat;
+    background-size: 358px 100px;
+    background-position: bottom right;
+}
+.hero-tittle-wrapper {
+    width: 529px;
+}
+.hero-text-line{
+    margin-bottom: 79px;
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+    background-color: #79c8c7;
+}
+.hero-tittle {
+    @include textStyle($FS:100px, $FW:700px, $LH:100px, $MB:0px, $CLR:white);
+
+}
+.hero-tittle-color {
+    color: #F67E7E;
+
+}
+.hero-text-wrapper {
+    width: 447px;
+}
+.hero-text {
+    @include textStyle($FS:18px, $FW:600px, $LH:28px, $MB:0px, $CLR:white);
+
+}
+
+//Tablet Start
+
+@media only screen and (max-width:800px){
+    .hero{
+        flex-direction: column;
+        background-image: url("../images/hero-bg.svg");
+        background-repeat: no-repeat;
+        background-size: 358px 100px;
+        background-position: center bottom ;
+    }
+    .hero-tittle-wrapper {
+        max-width:100%;
+        text-align: center;
+    }
+    .hero-text-line{
+        display: none;
+    }
+    .hero-tittle {
+        @include textStyle($FS:64px, $FW:700px, $LH:56px, $MB:24px, $CLR:white);
+    
+    }
+    .hero-tittle-color {
+        color: #F67E7E;
+    
+    }
+    .hero-text-wrapper {
+        text-align: center;
+        width: 457px;
+    }
+    .hero-text {
+        @include textStyle($FS:15px, $FW:600px, $LH:28px, $MB:0px, $CLR:white);
+    
+    }
+}
+//Tablet End
+//Mobile Start
+@media only screen and (max-width:600px){
+    .hero-tittle-wrapper {
+        max-width: 236px;
+        text-align: center;
+    }
+    .hero-text-line{
+        display: none;
+    }
+    .hero-tittle {
+        @include textStyle($FS:40px, $FW:700px, $LH:40px, $MB:18px, $CLR:white);
+    
+    }
+    .hero-tittle-color {
+        color: #F67E7E;
+    
+    }
+    .hero-text-wrapper {
+        text-align: center;
+        max-width: 327px;
+    }
+    
+}   
+
+
+
+//Mobile End
+/*hero style end*/

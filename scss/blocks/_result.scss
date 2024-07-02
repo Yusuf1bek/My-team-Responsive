@@ -1,0 +1,96 @@
+/*result section start*/
+.result-section {
+
+    padding: 140px 0;
+    background-color: rgb(0, 64, 71);
+    background-image: url("../images/result-section-bg.svg");
+    background-repeat: no-repeat;
+
+}
+
+.result{
+    max-width: 1079px;
+    margin-left: 50px;
+}
+.result-tittle {
+    text-align: center;
+    @include textStyle($FS:48px, $FW:700, $LH:48px, $MB:56px, $CLR:$white-color);
+}
+.result-content-wrapper {
+    margin-bottom: 56px;
+    margin-left: -18px; 
+    @include display($items:center, $space:start, $gap:80px);
+    
+}
+.result-person-img {
+    margin-left: 135px;
+}
+
+.result-section-img {
+    margin-left: 118px;
+}
+.result-text {
+    @include textStyle($FS:15px, $FW:600, $LH:25px, $MB:24px, $CLR:$white-color);
+    text-align: center;
+}
+.result-strong {
+    @include textStyle($FS:18px, $FW:700, $LH:28px, $MB:0px, $CLR:rgb(121, 200, 199));
+    text-align: center;
+    
+}
+.result-text-second{
+    @include textStyle($FS:13px, $FW:500, $LH:18px, $MB:32px, $CLR:$white-color);
+    text-align: center;
+}
+/*result section end*/
+
+/*Tablet*/
+@media (max-width:906px){
+    .result{
+        max-width: 488px;
+    }
+    .result-tittle {
+        text-align: center;
+        @include textStyle($FS:32px, $FW:700, $LH:32px, $MB:48px, $CLR:$white-color);
+    }
+    .result-content-wrapper {
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    .result-content{
+        max-width: 573px;
+    }
+    .result-person-img {
+        margin-left: 13px;
+    }
+    
+    .result-section-img {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:580px){
+    .result{
+        max-width: 100%;
+    }
+    .result-tittle {
+        text-align: center;
+        @include textStyle($FS:32px, $FW:700, $LH:32px, $MB:48px, $CLR:$white-color);
+    }
+    .result-content-wrapper {
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    .result-content{
+        max-width: 573px;
+    }
+    .result-person-img {
+        margin-left: 13px;
+    }
+    
+    .result-section-img {
+        margin-left: 0px;
+    }
+}

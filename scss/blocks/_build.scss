@@ -1,0 +1,84 @@
+ 
+.build-section {
+    padding: 198px 0 140px;
+    background-color: #012F34;
+    background-image: url("../../images/build-section-bg.svg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 100px 224px;
+}
+.build {
+    padding: 140px 0;
+    @include display($items:start, $space:space-between, $gap:0px);
+}
+.build__title-wrapper {
+    max-width: 445px;
+}
+.build__title {
+    position: relative;
+    @include textStyle($FS:48px, $FW:700, $LH:48px, $MB:0px, $CLR:$white-color);
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -54px;
+        left: 0;
+        width: 50px;
+        height: 4px;
+        background-color: $pink-color;
+    }
+}
+.build__list {
+    flex-direction: column;
+    @include display($items:start, $space:start, $gap:32px);
+}
+.build__item {
+    @include display($items:center, $space:start, $gap:23px);
+}
+.build__subcontent-wrapper {
+    max-width: 445px;
+}
+.build__subtitle {
+    position: relative;
+    @include textStyle($FS:18px, $FW:700, $LH:28px, $MB:16px, $CLR:$pink-color);
+}
+.build__subtext {
+    @include textStyle($FS:15px, $FW:600, $LH:25px, $MB:0px, $CLR:$white-color);
+}
+
+
+
+@media (max-width:906px){
+    .build-section {
+        padding: 136px 0 100px 58px;
+        background-position: right top;
+    }
+    .build {
+        flex-direction: column;
+        @include display($items:start, $space:start, $gap:64px);
+    }
+   
+    .build__title-wrapper, .build__subcontent-wrapper {
+        max-width: 100%;
+    }
+    .build__title{
+        @include textStyle($FS:32px, $FW:700, $LH:32px, $MB:0px, $CLR:$white-color);
+    }
+    
+}
+
+@media (max-width:510px){
+    .build-section {
+        padding: 100px 0 64px;
+    }
+    .build__title-wrapper {
+        max-width: 70%;
+    }
+    .build__item{
+        flex-direction: column;
+        text-align: center;
+    }
+    .build__title{
+        @include textStyle($FS:32px, $FW:700, $LH:32px, $MB:0px, $CLR:$white-color);
+    }
+}

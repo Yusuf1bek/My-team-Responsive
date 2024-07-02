@@ -1,0 +1,106 @@
+/*contact-us-section-start*/
+
+.contact-us-section {
+    padding: 91px 0;
+    background: rgb(246, 126, 126);
+    background-image: url("../../images/contact-us-section.svg");
+    background-repeat: no-repeat;
+    background-position: 0 90px;
+}
+
+.contact-us{
+    @include display($items:center, $space:start, $gap:336px);
+
+}
+
+.contact-us-tittle {
+    margin-left: 76px;
+    @include textStyle($FS:48px, $FW:700, $LH:48px, $MB:0px, $CLR: rgb(1, 47, 52));
+}
+.contact-link {
+    width: 153px;
+    padding: 10px 10px;
+    border: 2px solid   rgb(1, 47, 52);
+    border-radius: 24px;
+    color: rgb(1, 47, 52);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    transition: 0.3s all linear;
+}
+.contact-link:hover{
+    width: 180px;
+    background-color:  rgb(1, 47, 52);
+    color: white;
+}
+/*contact-us-section-end*/
+@media (max-width:910px){
+    .contact-us{
+        @include display($items:center, $space:start, $gap:84px);
+    
+    }
+    
+    .contact-us-tittle {
+        margin-left: 135px;
+        @include textStyle($FS:32px, $FW:700, $LH:32px, $MB:0px, $CLR: rgb(1, 47, 52));
+    }
+    .contact-link {
+        width: 153px;
+        padding: 10px 10px;
+        border: 2px solid   rgb(1, 47, 52);
+        border-radius: 24px;
+        color: rgb(1, 47, 52);
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0px;
+        text-align: center;
+        transition: 0.3s all linear;
+    }
+    .contact-link:hover{
+        width: 180px;
+        background-color:  rgb(1, 47, 52);
+        color: white;
+    }
+}
+@media (max-width:730px){
+    .contact-us-section {
+        padding: 83px 0 150px;
+        background: rgb(246, 126, 126);
+        background-image: url("../../images/contact-us-section.svg");
+        background-repeat: no-repeat;
+        background-position: 0 228px;
+    }
+    .contact-us{
+        flex-direction: column;
+        max-width:278px;
+        text-align: center;
+        gap: 24px;
+    }
+    
+    .contact-us-tittle {
+        margin-left: 135px;
+        @include textStyle($FS:32px, $FW:700, $LH:32px, $MB:0px, $CLR: rgb(1, 47, 52));
+    }
+    .contact-link {
+        margin-left: 100px;
+        width: 153px;
+        padding: 10px 10px;
+        border: 2px solid   rgb(1, 47, 52);
+        border-radius: 24px;
+        color: rgb(1, 47, 52);
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0px;
+        text-align: center;
+        transition: 0.3s all linear;
+    }
+    .contact-link:hover{
+        width: 180px;
+        background-color:  rgb(1, 47, 52);
+        color: white;
+    }
+}
